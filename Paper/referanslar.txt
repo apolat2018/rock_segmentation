@@ -1,0 +1,175 @@
+@article{varnes1978slope,
+  title={Slope movement types and processes},
+  author={Varnes, DJ},
+  journal={Landslides: analysis and control},
+  year={1978}
+}
+
+@article{hutchinson1988general,
+  title={General report: Morphological and geotechnical parameters of landslides in relation to geology and hydrogeology.},
+  author={Hutchinson, JN},
+  year={1988}
+}
+
+@article{cruden1996cruden,
+  title={Cruden, dm, varnes, dj, 1996, landslide types and processes, transportation research board, us national academy of sciences, special report, 247: 36-75},
+  author={Cruden, David Milne},
+  journal={Transp Res Board},
+  volume={247},
+  pages={36--57},
+  year={1996}
+}
+
+@article{polat2016preventing,
+  title={Preventing and analysis of falling rocks: A case of Sarica village (G{\"u}r{\"u}n, Turkey)},
+  author={Polat, Ali and Keskin, Inan and Denizli, Irfan},
+  journal={Journal of the Geological Society of India},
+  volume={88},
+  pages={763--772},
+  year={2016},
+  publisher={Springer}
+}
+
+@article{ji2023assessment,
+  title={Assessment and prevention on the potential rockfall hazard of high-steep rock slope: a case study of Zhongyuntai mountain in Lianyungang, China},
+  author={Ji, Zhong-Min and Chen, Tian-Li and Wu, Fa-Quan and Li, Zhen-Hua and Niu, Qing-He and Wang, Ke-Yi},
+  journal={Natural Hazards},
+  volume={115},
+  number={3},
+  pages={2117--2139},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{dunlop2006automatic,
+  title={Automatic rock detection and classification in natural scenes},
+  author={Dunlop, Heather},
+  journal={Masters Thesis, Carnegie Mellon University},
+  year={2006}
+}
+
+@inproceedings{song2008automated,
+  title={Automated rock segmentation for mars exploration rover imagery},
+  author={Song, YH and Shan, J},
+  booktitle={Lunar and planetary science conference XXXIX, Houston, USA},
+  year={2008}
+}
+
+@article{kuang2021rock,
+  title={Rock segmentation in the navigation vision of the planetary rovers},
+  author={Kuang, Boyu and Wisniewski, Mariusz and Rana, Zeeshan A and Zhao, Yifan},
+  journal={Mathematics},
+  volume={9},
+  number={23},
+  pages={3048},
+  year={2021},
+  publisher={MDPI}
+}
+@article{guo2022method,
+  title={A method of blasted rock image segmentation based on improved watershed algorithm},
+  author={Guo, Qinpeng and Wang, Yuchen and Yang, Shijiao and Xiang, Zhibin},
+  journal={Scientific Reports},
+  volume={12},
+  number={1},
+  pages={7143},
+  year={2022},
+  publisher={Nature Publishing Group UK London}
+}
+
+@inproceedings{malladi2014superpixels,
+  title={Superpixels using morphology for rock image segmentation},
+  author={Malladi, Sree Ramya SP and Ram, Sundaresh and Rodr{\'\i}guez, Jeffrey J},
+  booktitle={2014 Southwest Symposium on Image Analysis and Interpretation},
+  pages={145--148},
+  year={2014},
+  organization={IEEE}
+}
+@article{karimpouli2019segmentation,
+  title={Segmentation of digital rock images using deep convolutional autoencoder networks},
+  author={Karimpouli, Sadegh and Tahmasebi, Pejman},
+  journal={Computers \& geosciences},
+  volume={126},
+  pages={142--150},
+  year={2019},
+  publisher={Elsevier}
+}
+@article{xue2021rock,
+  title={Rock segmentation visual system for assisting driving in TBM construction},
+  author={Xue, Zhenfeng and Chen, Liang and Liu, Zhitao and Lin, Fulong and Mao, Weijie},
+  journal={Machine Vision and Applications},
+  volume={32},
+  number={4},
+  pages={77},
+  year={2021},
+  publisher={Springer}
+}
+
+@article{yilmaz2004divriugi,
+  title={Divri{\u{g}}i (Sivas) y{\"o}resinin jeolojisi ve yap{\i}sal evrimi},
+  author={Y{\i}lmaz, H{\"u}seyin and Y{\i}lmaz, Ali},
+  journal={T{\"u}rkiye Jeoloji B{\"u}lteni},
+  volume={47},
+  number={1},
+  pages={13--46},
+  year={2004},
+  publisher={TMMOB Jeoloji M{\"u}hendisleri Odas{\i}}
+}
+@inproceedings{ronneberger2015u,
+  title={U-net: Convolutional networks for biomedical image segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  booktitle={Medical image computing and computer-assisted intervention--MICCAI 2015: 18th international conference, Munich, Germany, October 5-9, 2015, proceedings, part III 18},
+  pages={234--241},
+  year={2015},
+  organization={Springer}
+}
+
+@inproceedings{cao2024risk,
+  title={Risk assessment and prevention for typical railway bridge pier under rockfall impact},
+  author={Cao, Zhiyang and Liu, Zhanhui and Xu, Guoji and Lin, Han and Li, Xiaolun and Nikitas, Nikolaos},
+  booktitle={Structures},
+  volume={62},
+  pages={106178},
+  year={2024},
+  organization={Elsevier}
+}
+
+@article{liu2021trajectory,
+  title={Trajectory analysis and risk evaluation of dangerous rock mass instability of an overhang slope, southwest of China},
+  author={Liu, Wen-lian and Dong, Jia-xing and Xu, Han-hua and Sui, Su-gang and Yang, Run-xue and Zhou, Lun-shun},
+  journal={Advances in civil engineering},
+  volume={2021},
+  number={1},
+  pages={7153535},
+  year={2021},
+  publisher={Wiley Online Library}
+}
+@incollection{kainthola2023stability,
+  title={Stability Assessment of Markundi Hills Using Q-slope, SMR and Simulation Tools},
+  author={Kainthola, Ashutosh and Pandey, Vishnu Himanshu Ratnam and Singh, PK and Singh, TN},
+  booktitle={Landslides: Detection, Prediction and Monitoring: Technological Developments},
+  pages={87--107},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{keskin2022kinematic,
+  title={Kinematic analysis and rockfall assessment of rock slope at the UNESCO World Heritage city (Safranbolu/Turkey)},
+  author={Keskin, {\.I}nan and Polat, Ali},
+  journal={Iranian Journal of Science and Technology, Transactions of Civil Engineering},
+  volume={46},
+  number={1},
+  pages={367--384},
+  year={2022},
+  publisher={Springer}
+}
+
+@article{jaccard1912distribution,
+  title={The distribution of the flora in the alpine zone. 1},
+  author={Jaccard, Paul},
+  journal={New phytologist},
+  volume={11},
+  number={2},
+  pages={37--50},
+  year={1912},
+  publisher={Wiley Online Library}
+}
