@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main_document.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+The style file: cas-model2-names.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Database file #1: bibliography.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--empty booktitle in Song2006AFF
+Warning--empty pages in Song2006AFF
+You've used 19 entries,
+            2990 wiz_defined-function locations,
+            860 strings with 10315 characters,
+and the built_in function-call counts, 13281 in all, are:
+= -- 1012
+> -- 526
+< -- 14
++ -- 208
+- -- 183
+* -- 1424
+:= -- 1907
+add.period$ -- 52
+call.type$ -- 19
+change.case$ -- 156
+chr.to.int$ -- 19
+cite$ -- 21
+duplicate$ -- 1012
+empty$ -- 972
+format.name$ -- 242
+if$ -- 2506
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 189
+newline$ -- 105
+num.names$ -- 76
+pop$ -- 367
+preamble$ -- 1
+purify$ -- 137
+quote$ -- 0
+skip$ -- 326
+stack$ -- 0
+substring$ -- 535
+swap$ -- 729
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 171
+warning$ -- 2
+while$ -- 87
+width$ -- 0
+write$ -- 276
+(There were 2 warnings)
