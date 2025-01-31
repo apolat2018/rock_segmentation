@@ -66,7 +66,7 @@
 \shorttitle{Short title}
 \shortauthors{A.Polat}
 
-\title [mode = title]{A Fast Method for Detecting Rock Blocks and Calculating Volumes and 3D Surface Areas}
+\title [mode = title]{A Fast Method for Detecting Rock Blocks and Computing Volumes and 3D Surface Areas}
 
 
 \author[0]{Ali Polat}[type=editor,
@@ -91,13 +91,13 @@ Rockfall events are a type of natural disaster that causes loss of life and prop
 Dear Editors-in-Chief,
 \newline
  
-please find the enclosed manuscript "..." which we are submitting for exclusive consideration for publication in Computers \& Geosciences. We confirm that the submission follows all the requirements and includes all the items of the submission checklist.  
+please find the enclosed manuscript "A Fast Method for Detecting Rock Blocks and Computing Volumes and 3D Surface Areas" which i am submitting for exclusive consideration for publication in Computers \& Geosciences. I confirm that the submission follows all the requirements and includes all the items of the submission checklist.  
 \newline
  
-The manuscript presents ... 
+The manuscript presents a fast method for detecting rock blocks. Rock blocks were detected precisely using the U-Net network and transfer learning method. Train IoU, validation IoU, train F1-score and validation F1-score were calculated as 0.8497\%, 0.8461\%, 0.9186\%, and 0.9152\%, respectively. An algorithm was developed to calculate the volume and 3D surface area of rock blocks. The methods and algorithms used in the study can be used in many fields, such as engineering applications and geological-geomorphological studies.
 \newline
 
-We provide the source codes in a public repository with details listed in the section "Code availability".
+I provide the source codes in a public repository with details listed in the section "Code availability".
 \newline
 
 Thanks for your consideration. 
@@ -106,9 +106,9 @@ Thanks for your consideration.
 Sincerely,
 \newline
 
-Authors names
+Ali Polat
 
-Corresponding author affiliation and e-mail
+Provincial Directorate of Disaster and Emergency, 58000, Sivas, Turkey ali.polat@afad.gov.tr
 \newline
 
 \textbf{Delete before submission:}
@@ -135,11 +135,10 @@ Please confirm that your submission follows all the requirements of the guidelin
 
  
 \begin{highlights}
-\item Highlight 1
-\item Highlight 2
-\item Highlight 3
-\item Highlight 4
-\item Highlight 5
+\item Rock blocks were detected precisely using the U-Net network and transfer learning method.
+\item An algorithm was developed to calculate the volume and 3D surface area of rock blocks.
+\item The approach can be readily adapted to other terrain-related segmentation problems, as well as to the calculation of volume and 3D surface areas.
+
 \end{highlights}
 
 \begin{keywords}
@@ -258,7 +257,7 @@ Where TP is True Positive, FP is False Positive and FN is False Negative.
 
 
 \section{Results}
-In this study, we created our own dataset. A large orthophoto image with a dimension of 2329x1587 was created from UAV images. This image needs to be patched for use in the segmentation model. A python script has been written for this purpose. It is possible to create the desired number and size of images with the written script. Random corner coordinates with the size of 256x256 patches were created. Obtaining images with the exact corner coordinates was prevented. Because of this condition, the program gives an error when too many images are wanted to be created. Also, the probability of creating very similar images increases. Using the grid method, 65 images can be obtained from the large orthophoto image. Using the random sampling method 600 images were obtained from the same image.
+In this study, we created our own dataset. A large orthophoto image with a dimension of 2329x1587 was created from UAV images. This image needs to be patched for use in the segmentation model. A python script has been written for this purpose. It is possible to create the desired number and size of images with the written script. Random corner coordinates with the size of 256x256 patches were created. Obtaining images with the exact corner coordinates was prevented. Because of this condition, the program gives an error when too many images are wanted to be created. Also, the probability of creating very similar images increases. Using the grid method, 56 images can be obtained from the large orthophoto image. Using the random sampling method 600 images were obtained from the same image.
 
 U-Net segmentation model was used with DenseNet121. IOU and F1 score values were used as metrics. Model parameters were tested with different values. The parameters and values that provide the best results are given in the table\ref{tab:Table1} below.
 
@@ -287,7 +286,7 @@ IoU scores and losses graph of model is shown in Figure \ref{fig:Figure6}. The r
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig6.jpg}
+	\includegraphics[width=0.75\textwidth]{figures/fig6.png}
 	\caption{DenseNet121 IoU and Loss values}
 	\label{fig:Figure6}
 \end{figure}
@@ -348,7 +347,7 @@ As a result, this study provides a basis for volumetric and geometric analyses f
 
 \section{Acknowledgments}
 
-The authors would like to acknowledge ...
+The author wants to thank the Prime Ministry Disaster and Emergency Management Authority for supplying orthophoto images and geological map.
 
 \newpage
 
