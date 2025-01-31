@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.1.30)  31 JAN 2025 00:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.1.30)  31 JAN 2025 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -860,7 +860,7 @@ LaTeX Font Info:    Trying to load font information for TS1+stix on input line
 File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-49.
+48.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -872,80 +872,80 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \maketitle
+l.148 \maketitle
                  [0]
 LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
-ne 149.
+ne 148.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stix\ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixex on input lin
-e 149.
+e 148.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stix\ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 149
+LaTeX Font Info:    Trying to load font information for U+msa on input line 148
 .
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 149
+LaTeX Font Info:    Trying to load font information for U+msb on input line 148
 .
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input l
-ine 149.
+ine 148.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stix\ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixbb on input lin
-e 149.
+e 148.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stix\ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixcal on input li
-ne 149.
+ne 148.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stix\ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixsf on input lin
-e 149.
+e 148.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stix\ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixtt on input lin
-e 149.
+e 148.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stix\ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
 )
-Overfull \hbox (117.0831pt too wide) detected at line 149
+Overfull \hbox (117.0831pt too wide) detected at line 148
 []
  []
 
 (main_document.abs)
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-49.
+48.
 
 (C:\Users\AP\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 [1]
-Overfull \hbox (2.34946pt too wide) in paragraph at lines 170--171
+Overfull \hbox (2.34946pt too wide) in paragraph at lines 169--170
 []\T1/stix/m/n/10 Recently, var-i-ous deep learn-ing and ma-chine learn-ing al-
 go-rithms, in-clud-ing Con-vo-lu-tional Neu-ral Net-works (CNN),
  []
@@ -954,12 +954,12 @@ go-rithms, in-clud-ing Con-vo-lu-tional Neu-ral Net-works (CNN),
 \openout3 = `main_document.fff'.
 
  (main_document.fff)
-Underfull \hbox (badness 10000) in paragraph at lines 203--208
+Underfull \hbox (badness 10000) in paragraph at lines 202--207
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 222--229
+Underfull \hbox (badness 10000) in paragraph at lines 221--228
 
  []
 
@@ -968,7 +968,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.318 
+l.317 
       ] [7] [8] (main_document.bbl [9])
 AED endfloat: Processing end Figures and Tables [10] (main_document.lof)
 \tf@lof=\write6
@@ -1049,10 +1049,10 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.39 \efloatseparator
                       <./figures/fig5.jpg>]
-<figures/fig6.jpg, id=201, 722.7pt x 722.7pt>
-File: figures/fig6.jpg Graphic file (type jpg)
-<use figures/fig6.jpg>
-Package pdftex.def Info: figures/fig6.jpg  used on input line 43.
+<figures/fig6.png, id=201, 722.7pt x 722.7pt>
+File: figures/fig6.png Graphic file (type png)
+<use figures/fig6.png>
+Package pdftex.def Info: figures/fig6.png  used on input line 43.
 (pdftex.def)             Requested size: 351.2493pt x 351.24791pt.
  [17
 
@@ -1062,8 +1062,8 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.47 \efloatseparator
-                      <./figures/fig6.jpg>]
-<figures/fig7.jpg, id=207, 852.0633pt x 564.1878pt>
+                      <./figures/fig6.png>]
+<figures/fig7.jpg, id=209, 852.0633pt x 564.1878pt>
 File: figures/fig7.jpg Graphic file (type jpg)
 <use figures/fig7.jpg>
 Package pdftex.def Info: figures/fig7.jpg  used on input line 51.
@@ -1077,7 +1077,7 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.55 \efloatseparator
                       <./figures/fig7.jpg>]
-<figures/fig8.jpg, id=212, 365.6862pt x 199.7061pt>
+<figures/fig8.jpg, id=214, 365.6862pt x 199.7061pt>
 File: figures/fig8.jpg Graphic file (type jpg)
 <use figures/fig8.jpg>
 Package pdftex.def Info: figures/fig8.jpg  used on input line 59.
@@ -1089,19 +1089,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.376 \end{document}
+l.373 \end{document}
                      <./figures/fig8.jpg>] (main_document.aux)
 Package rerunfilecheck Info: File `main_document.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 17732 strings out of 478593
- 272981 string characters out of 2844098
+ 17733 strings out of 478593
+ 273333 string characters out of 2844098
  546741 words of memory out of 3000000
  35525 multiletter control sequences out of 15000+600000
  573348 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,77p,1715b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,9n,77p,1715b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\AP\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecs
 x0900.pk> <C:\Users\AP\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecss0900.pk> <C:\Users\AP\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
@@ -1116,9 +1116,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/stix/STIXGeneral-Regular.pfb><C
 x.pfb><C:/Users/AP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/stix/st
 ix-mathit.pfb><C:/Users/AP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /stix/stix-mathrm.pfb>
-Output written on main_document.pdf (21 pages, 14942502 bytes).
+Output written on main_document.pdf (21 pages, 14929598 bytes).
 PDF statistics:
- 394 PDF objects out of 1000 (max. 8388607)
+ 396 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
