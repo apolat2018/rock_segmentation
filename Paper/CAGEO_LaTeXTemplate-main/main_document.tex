@@ -158,7 +158,7 @@ In many parts of the world, loss of life and property is experienced, and large-
 
 In 2006, Dunlop \citep{dunlop2006automatic} developed a technique for characterization of rocks using albedo, colour, texture and shape features. In that work rocks in natural scenes are segmented and located with an accurate boundary. For segmentation purpose top-down and bottom-up knowledge are combined, and geologic rock analysis performed successfully.
 
-In the study carried out by Song \citep{Song2006AFF} in this area in 2006, segmentation studies of rocks on Mars were carried out in order to plan the route and determine the landing areas. Texture-based image segmentation and edge-flow driven active contour has been developed. Wavelet based local transform, multi-resolution histograms, and inter-scale decision were combined and used for rock segmentation. As a result of the experiments, reliable rock segmentation results were obtained by Song.
+In the study carried out by Song \citep{Song2006AFF} in this field in 2006, segmentation studies of rocks on Mars were carried out in order to plan the route and determine the landing areas. Texture-based image segmentation and edge-flow driven active contour has been developed. Wavelet based local transform, multi-resolution histograms, and inter-scale decision were combined and used for rock segmentation. As a result of the experiments, reliable rock segmentation results were obtained by Song.
 
 The place of visual navigation in planetary rover autonomy is crucial. Rock segmentation is an important and challenging task for rover autonomy due to the high computational load and real-time requirement. Kuang et al. \citep{kuang2021rock} propose a rock segmentation network (NI-U-Net++) to aid in the visual navigation of rovers. The created model consists of two stages. In the first step, called pre-training, synthetic rock images are created and then the generated images are used to pre-train the NI-U-Net++ network. The second phase, transfer-training, fine-tunes the pre-trained NI-U-Net++ network with real-life images.
 
@@ -190,7 +190,7 @@ Karasar village is located on the slopes of a hill. The bedrock on the hill is h
 \end{figure}
 
 \section{Methodology}
-Creating the dataset is a big problem for classification or segmentation processes. In this study, Unmanned Air Vehicle (UAV) was used to collect data. An orthophoto image of the region was created from aerial photographs obtained by UAV. An area was selected to create train images. Rock blocks within this area were labelled and mask images were created. Then segmentation process was completed by Python and necessary libraries, and the results were converted to the polygon as a vector file (Fig. \ref{fig:Figure3}). Moreover, the volumes of all the rocks were calculated.
+Creating the dataset is a big problem for classification or segmentation processes. In this study, Unmanned Air Vehicle (UAV) was used to collect data. An orthophoto image of the region was created from aerial photographs obtained by UAV. An area was selected to create train images. Rock blocks within this area were labelled and mask images were created. Then segmentation process was completed by Python and necessary libraries, and the results were converted to the polygon as a vector file (Fig. \ref{fig:Figure3}). Moreover, the volumes and 3D surfaces of all the rocks were calculated.
 This section includes an example of equation. 
 \begin{figure}
 	\centering
@@ -209,7 +209,7 @@ The flight was carried out by the "Double Grid" method. The model of UAV used in
 
 The camera model (FC00X) of UAV has 4000x3000 resolution, 3.61 mm focal length and 1.56 x 1.56 µm pixel dimensions. After the flight, 284 images were obtained, and these images were processed with the Pix4Dmapper software. As a result, an orthophoto image with a resolution of 3.51 cm/pixel and a dimension of 2329x1587 was created.
 
-An area was selected to create train and test images from large orthophoto image. This area was selected randomly. Then all rocks seen on the image were drawn on by GIS software. This file was saved as a vector file, and it will be used as mask data in segmentation processes. After this process, we have created the image and mask files. 
+An area was selected to create train and test images from large orthophoto image. This area was selected randomly. Then all rocks seen on the image were drawn on by GIS software. This file was saved as a vector file and used as mask data in segmentation processes. After this process, we have created the image and mask files. 
 A deep learning model requires the same sizes of images. That's why a single image needs to be split into patches. The patch dimension was used as 256×256. Train-test splitting size was selected as 66\% for training data and 34\% for testing data. The large image was split into 9 part to avoid sampling from the same regions. Areas 1,5,9 were selected for creating test images. Train images were selected from the others (2,3,4,6,7,8) areas (Fig. \ref{fig:Figure4}). A total of 600 images (256×256) were selected, 369 images for training and 191 images for testing. The same processes were applied to extract the mask images.
 \begin{figure}
 	\centering
@@ -235,7 +235,7 @@ In this study, U-Net architecture \citep{ronneberger2015u} was used as a segment
 	\label{fig:Figure5}
 \end{figure}
 
-DenseNet121 transfer learning models were used for feature extraction and rock segmentation was performed with U-Net. Segmentation model was evaluated in terms of Intersection over Union (IoU) and f1-score metrics. For the calculate loss value dice loss was used. IoU, which is frequently preferred in segmentation problems, is also known as the Jaccard similarity coefficient \citep{jaccard1912distribution}. It is the ratio of correctly classified pixels to the sum of the number of pixels in that class and the predicted number of pixels. Mean IoU is the average IoU of all classes and presented in equation \ref{eqn:eq1}. 
+DenseNet121 transfer learning models were used for feature extraction and rock segmentation was performed with U-Net. Segmentation model was evaluated in terms of Intersection over Union (IoU) and F1-score metrics. For the calculate loss value dice loss was used. IoU, which is frequently preferred in segmentation problems, is also known as the Jaccard similarity coefficient \citep{jaccard1912distribution}. It is the ratio of correctly classified pixels to the sum of the number of pixels in that class and the predicted number of pixels( Equation \ref{eqn:eq1}). 
 
 \begin{equation}
 \label{eqn:eq1}
@@ -259,7 +259,7 @@ Where TP is True Positive, FP is False Positive and FN is False Negative.
 \section{Results}
 In this study, we created our own dataset. A large orthophoto image with a dimension of 2329x1587 was created from UAV images. This image needs to be patched for use in the segmentation model. A python script has been written for this purpose. It is possible to create the desired number and size of images with the written script. Random corner coordinates with the size of 256x256 patches were created. Obtaining images with the exact corner coordinates was prevented. Because of this condition, the program gives an error when too many images are wanted to be created. Also, the probability of creating very similar images increases. Using the grid method, 56 images can be obtained from the large orthophoto image. Using the random sampling method 600 images were obtained from the same image.
 
-U-Net segmentation model was used with DenseNet121. IOU and F1 score values were used as metrics. Model parameters were tested with different values. The parameters and values that provide the best results are given in the table\ref{tab:Table1} below.
+U-Net segmentation model was used with DenseNet121. IOU and F1-score values were used as metrics. Model parameters were tested with different values. The parameters and values that provide the best results are given in the table\ref{tab:Table1} below.
 
 
 \begin{table}
@@ -356,8 +356,6 @@ The author wants to thank the Prime Ministry Disaster and Emergency Management A
 Name of the code: rock\_segmentation
 
 Contact: ali.polat@afad.gov.tr
-
-Hardware requirements: 
 
 Program language: Python
  
