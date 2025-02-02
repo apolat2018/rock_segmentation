@@ -1,8 +1,0 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Location map}}{12}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Geological map (1/25000 scale geological map of General Directorate of Mineral Research and Explorations) (a), rock blocks (b), settlement and rocks (c)}}{13}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Workflow diagram}}{14}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Train and test sampling areas. 1,5,9 test sampling area and 2,3,4,6,7,8 train sampling area}}{15}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces U-Net architecture}}{16}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces DenseNet121 IoU and Loss values}}{17}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Result map of the model (a) original view, (b,c,d )zoomed views.}}{18}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Volume calculation methods. (a) first height is greater than the last height of the rows,(b) b) first height is less than the last height of the rows}}{19}{figure.8}%
