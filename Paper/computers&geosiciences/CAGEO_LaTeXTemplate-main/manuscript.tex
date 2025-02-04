@@ -103,9 +103,9 @@ Convolutional Neural Networks \sep 3D Surface Area Calculation \sep Volume Calcu
 \label{intro}
 In many parts of the world, loss of life and property is experienced, and large-scale economic losses occur due to natural disasters. One of these natural disasters is rockfall events. Rockfalls are a type of slope instability in which blocks of rock confined to discontinuities move very rapidly from the source region \citep{varnes1978slope, hutchinson1988morphological, CrudenVarnes1996}. Due to the high velocity during the event, rockfalls can be very dangerous for structures in their route depending on the block size. Although it is a type of disaster that affects small areas, its consequences can be very serious. That's why rockfall prevention studies are important. There are studies on this subject in the literature \citep{liu2021trajectory, keskin2022kinematic,ji2023assessment,kainthola2023stability, cao2024risk}. Some preliminary studies are needed to develop a prevention method. One of them is the detection of rock blocks and the calculation of their geometric properties. In this study, rock blocks were segmented, and their volumes and 3D surface areas were calculated. 
 
-There are various studies on rock segmentation in the literature. \cite{dunlop2006automatic} developed a technique for the characterization of rocks using albedo, color, texture, and shape features. In that work, rocks in natural scenes were segmented and located with accurate boundaries. For segmentation purpose top-down and bottom-up knowledge are combined, and geologic rock analysis performed successfully.
+There are various studies on rock segmentation in the literature. \cite{dunlop2006automatic} developed a technique for the characterization of rocks using albedo, color, texture, and shape features. In that work, rocks in natural scenes were accurately segmented and localized with precise boundaries. The authors successfully combined top-down and bottom-up knowledge for segmentation and performed geologic rock analysis effectively.
 
-In the study conducted by \cite{Song2006AFF}, rock segmentation on Mars was performed to plan routes and determine landing areas. Texture-based image segmentation and edge-flow driven active contour has been developed. Wavelet based local transform, multi-resolution histograms, and inter-scale decision were combined and used for rock segmentation. As a result of the experiments, \cite{Song2006AFF} obtained reliable rock segmentation results.
+In a study conducted by \cite{Song2006AFF}, rock segmentation techniques were applied to Martian images with the aim of planning routes and identifying potential landing areas. The researchers developed texture-based image segmentation methods that utilize edge-flow driven active contours. They also combined wavelet-based local transforms, multi-resolution histograms, and inter-scale decision strategies for more effective rock segmentation. Through their experiments, \cite{Song2006AFF} successfully obtained reliable rock segmentation results.
 
 The place of visual navigation in planetary rover autonomy is crucial. Rock segmentation is an important and challenging task for rover autonomy due to the high computational load and real-time requirement. \cite{kuang2021rock} propose a rock segmentation network (NI-U-Net++) to aid in the visual navigation of rovers. The created model consists of two steps. In the first step, called pre-training, synthetic rock images are generated and used to pre-train the NI-U-Net++ network. In the second phase, transfer-training, the pre-trained NI-U-Net++ network is fine-tuned using real-life images.
 
@@ -123,7 +123,7 @@ In the above studies, rock segmentation was carried out for different purposes. 
 The study area is in the north of Karasar village, which is approximately 156 km away from Sivas city (Fig. \ref{fig:Figure1}). This area consists of Middle Miocene aged agglomerate and tuff units (MTA 1/25000) (Fig. \ref{fig:Figure2}). This unite was defined as Adatepe volcanites according to \cite{yilmaz2004divriugi}. The unit consists of black, red-brown, and brown-black colored basaltic lava flows and less commonly agglomerate and tuffs. The rock blocks in this unit expose a risk of rockfall. Lower Miocene aged sandstone-mudstone-limestone units are observed in the settlement area (Karasar village) and vicinity.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig1.jpg}
+	\includegraphics[width=0.75\textwidth]{fig1.jpg}
 	\caption{ Location map}
 	\label{fig:Figure1}
 \end{figure}
@@ -131,7 +131,7 @@ The study area is in the north of Karasar village, which is approximately 156 km
 Karasar village is located on the slopes of a hill. The bedrock on the hill is heavily fractured and cracked. There are many rock blocks that have fallen from the upper parts of the slope. The sizes of these blocks vary from 0.5 m$^3$ to 15 m$^3$. Rapid temperature changes, heavy snow and precipitation, freeze-thaw cycles, earthquakes, and human-induced factors increase the risk of rockfall in the region.
 \begin{figure}[pos=h]
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig2.jpg}
+	\includegraphics[width=0.75\textwidth]{fig2.jpg}
 	\caption{ Geological map (1/25000 scale geological map of General Directorate of Mineral Research and Explorations) (a), rock blocks (b), settlement and rocks (c)}
 	\label{fig:Figure2}
 \end{figure}
@@ -141,7 +141,7 @@ Creating the dataset is a big problem for classification or segmentation process
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig3.jpg}
+	\includegraphics[width=0.75\textwidth]{fig3.jpg}
 	\caption{ Workflow diagram}
 	\label{fig:Figure3}
 \end{figure}
@@ -161,7 +161,7 @@ A region was selected from a large orthophoto image to create training and testi
 A deep learning model requires the same-sized images. That's why a single image needs to be split into patches. The patch dimension was used as 256$\times$256. Train-test splitting rate was selected as 66\% for training data and 34\% for testing data. The large image was split into 9 parts to avoid sampling from the same regions. Areas 1,5, and 9 were selected for creating test images. Train images were selected from the other (2,3,4,6,7,8) areas (Fig. \ref{fig:Figure4}). A total of 560 images (256$\times$256) were selected, 369 images for training and 191 images for testing. The same processes were applied to extract the mask images.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig4.jpg}
+	\includegraphics[width=0.75\textwidth]{fig4.jpg}
 	\caption{ Train and test sampling areas. 1,5,9 test sampling area and 2,3,4,6,7,8 train sampling area}
 	\label{fig:Figure4}
 \end{figure}
@@ -178,7 +178,7 @@ The Albumentations \citep{buslaev2020albumentations} method was also used for da
 In this study, U-Net architecture \citep{ronneberger2015u} was used as segmentation model. This architecture is a type of fully convolutional network developed for biomedical image segmentation. It is named U-Net because the shape of the architecture is like the letter U. The network architecture of U-Net is shown in Fig. \ref{fig:Figure5}. It consists of two parts: contracting path (left side) and expanding path (right side). The first part captures context, and the second part enables precise localization. The left side consists of four blocks and each block contains two 3$\times$3 convolution layers + activation function (with batch normalization) and one 2$\times$2 max-pooling layer. Also, the right side consists of four blocks. These blocks include the steps of deconvolution layer, merging with feature map from subsampling path, 3$\times$3 convolution layer + activation function (with batch normalization). Finally, an additional 1$\times$1 convolution operation is applied to reduce the feature map to the required number of channels and generate the segmented image.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig5.jpg}
+	\includegraphics[width=0.75\textwidth]{fig5.jpg}
 	\caption{U-Net architecture}
 	\label{fig:Figure5}
 \end{figure}
@@ -238,7 +238,7 @@ IoU scores and losses graph of model are shown in Figure \ref{fig:Figure6}. The 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig6.png}
+	\includegraphics[width=0.75\textwidth]{fig6.png}
 	\caption{DenseNet121 IoU and Loss values}
 	\label{fig:Figure6}
 \end{figure}
@@ -248,7 +248,7 @@ Sometimes there may be distortions at the edges and corners of the image. This c
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig7.jpg}
+	\includegraphics[width=0.75\textwidth]{fig7.jpg}
 	\caption{Result map of the model (a) original view, (b,c,d )zoomed views.}
 	\label{fig:Figure7}
 \end{figure}
@@ -260,7 +260,7 @@ In volume calculations, there must be a reference height or surface. In this stu
 In this method, it is necessary to evaluate three different scenarios. In the first case, the first and last elevations of the rows are equal. Here, the starting elevation value is used as the reference height. Volumes above this elevation are calculated as fill volumes, while volumes below are calculated as cut volumes. In the second case, the first elevation is greater than the last elevation of the rows. In the third case, the first elevation is less than the last elevation of the rows. Different calculations are required for each scenario. These situations are illustrated in Figure \ref{fig:Figure8}.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\textwidth]{figures/fig8.jpg}
+	\includegraphics[width=0.75\textwidth]{fig8.jpg}
 	\caption{Volume calculation methods. (a) first height is greater than the last height of the rows,(b) b) first height is less than the last height of the rows}
 	\label{fig:Figure8}
 \end{figure}
@@ -324,7 +324,7 @@ https://github.com/apolat2018/rock\_segmentation
 
 
 \bibliographystyle{cas-model2-names}
-\bibliography{bibliography} 
+\bibliography{bibliography.bib} 
 
 \end{document}
 
