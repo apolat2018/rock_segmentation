@@ -89,7 +89,7 @@ Rockfall events are a type of natural disaster that causes loss of life and prop
 
 
 \begin{keywords}
-Rock segmentation \sep U-Net\sep Convolutional Neural Networks \sep Rockfall\sep Volume Calculation\sep 3D Surface Area Calculation
+Convolutional Neural Networks \sep 3D Surface Area Calculation \sep Volume Calculation\sep  Rock segmentation \sep  Rockfall\sep U-Net
 \end{keywords}
 
 \maketitle 
@@ -105,7 +105,7 @@ In many parts of the world, loss of life and property is experienced, and large-
 
 There are various studies on rock segmentation in the literature. \cite{dunlop2006automatic} developed a technique for the characterization of rocks using albedo, color, texture, and shape features. In that work, rocks in natural scenes were segmented and located with accurate boundaries. For segmentation purpose top-down and bottom-up knowledge are combined, and geologic rock analysis performed successfully.
 
-In the study conducted by \cite{Song2006AFF} in 2006, rock segmentation on Mars was performed to plan routes and determine landing areas. Texture-based image segmentation and edge-flow driven active contour has been developed. Wavelet based local transform, multi-resolution histograms, and inter-scale decision were combined and used for rock segmentation. As a result of the experiments, \cite{Song2006AFF} obtained reliable rock segmentation results.
+In the study conducted by \cite{Song2006AFF}, rock segmentation on Mars was performed to plan routes and determine landing areas. Texture-based image segmentation and edge-flow driven active contour has been developed. Wavelet based local transform, multi-resolution histograms, and inter-scale decision were combined and used for rock segmentation. As a result of the experiments, \cite{Song2006AFF} obtained reliable rock segmentation results.
 
 The place of visual navigation in planetary rover autonomy is crucial. Rock segmentation is an important and challenging task for rover autonomy due to the high computational load and real-time requirement. \cite{kuang2021rock} propose a rock segmentation network (NI-U-Net++) to aid in the visual navigation of rovers. The created model consists of two steps. In the first step, called pre-training, synthetic rock images are generated and used to pre-train the NI-U-Net++ network. In the second phase, transfer-training, the pre-trained NI-U-Net++ network is fine-tuned using real-life images.
 
@@ -239,7 +239,7 @@ IoU scores and losses graph of model are shown in Figure \ref{fig:Figure6}. The 
 	\label{fig:Figure6}
 \end{figure}
 
-The trained model successfully detected rock blocks within the study area (Fig. \ref{fig:Figure7}). The boundaries of 3111 rocks of various sizes were determined and created as a vector file (.shp). This method is not recommended for smaller areas. Because sufficient training data cannot be created. In areas where there are several rock blocks, detection can also be done manually. 
+The trained model successfully detected rock blocks within the study area (Fig. \ref{fig:Figure7}). The boundaries of 3111 rocks of various sizes were determined and created as a vector file (.shp). This detection method is not recommended for smaller areas. Because sufficient training data cannot be created. In areas where there are several rock blocks, detection can also be done manually. 
 Sometimes there may be distortions at the edges and corners of the image. This causes errors in rock block detection. Therefore, a larger area than the area where the rocks are located should be selected as the study area.
 
 \begin{figure}
@@ -290,7 +290,9 @@ U-Net deep learning network and DenseNet121 model were used as segmentation meth
 
 The volume of each rock block was successfully calculated from the data obtained after segmentation. Similarly, the 3D surface areas of the blocks were calculated. High-resolution Digital Elevation Map (DEM) data were used in volume and surface area calculations. Determination of block volumes and 3D surface areas is of critical importance, especially for rockfall simulations and engineering analyses. In addition, since the outputs of the study are coordinated vector data, they can be easily used in any GIS software. It can be a basis for different studies and analyses.
 
-This study has presented a reliable method for segmentation and volume/surface area calculations and has also directly contributed to engineering applications in terms of determining the physical properties of rock masses. The segmentation section of the study is recommended for terrains containing a lot of rock blocks. It is possible to detect rock blocks in a short time. In addition, this method can be used to automatically detect different types of terrain. Deep learning models usually require a large amount of data for training. A large amount of data can be generated with the Random Sampling method proposed in this study. Volume and 3D surface area algorithms can be used not only for rock blocks but also for any object on the field. These algorithms only require precise DEM data and object boundaries. For example, these calculations can be made for a single rock block. In these calculations, ground heights and object heights must be determined clearly. When determining the object boundaries, they should be extended towards the ground. If the boundaries only represent the object, the ground heights will not be considered, and the results will not be correct. In some cases, the model can draw the boundaries of the rock blocks narrower. In this case, this problem can be solved by adding buffers to the rock blocks.
+This study has presented a reliable method for segmentation and volume/surface area calculations and has also directly contributed to engineering applications in terms of determining the physical properties of rock masses. The segmentation section of the study is recommended for terrains containing a lot of rock blocks. It is possible to detect rock blocks in a short time. In addition, this method can be used to automatically detect different types of terrain. This study requires DEM and orthophoto images obtained from the field. A region is selected and labelled objects in any GIS software for training the model. The following processes are carried out entirely with Python scripts.
+
+Deep learning models usually require a large amount of data for training. A large amount of data can be generated with the Random Sampling method proposed in this study. Volume and 3D surface area algorithms can be used not only for rock blocks but also for any object on the field. These algorithms only require precise DEM data and object boundaries. For example, these calculations can be made for a single rock block. In these calculations, ground heights and object heights must be determined clearly. When determining the object boundaries, they should be extended towards the ground. If the boundaries only represent the object, the ground heights will not be considered, and the results will not be correct. In some cases, the model can draw the boundaries of the rock blocks narrower. In this case, this problem can be solved by adding buffers to the rock blocks.
 
 As a result, this study provides a basis for volumetric and geometric analyses for rock mechanics, geology and engineering applications, and can be expanded by testing on different rock types and fields in future studies.
 
