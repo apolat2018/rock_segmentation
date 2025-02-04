@@ -1,0 +1,62 @@
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{fig1.jpg}
+\caption{ Location map}
+\label{fig:Figure1}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[pos=h]
+\centering
+\includegraphics[width=0.75\textwidth]{fig2.jpg}
+\caption{ Geological map (1/25000 scale geological map of General Directorate of Mineral Research and Explorations) (a), rock blocks (b), settlement and rocks (c)}
+\label{fig:Figure2}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{fig3.jpg}
+\caption{ Workflow diagram}
+\label{fig:Figure3}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{fig4.jpg}
+\caption{ Train and test sampling areas. 1,5,9 test sampling area and 2,3,4,6,7,8 train sampling area}
+\label{fig:Figure4}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{fig5.jpg}
+\caption{U-Net architecture}
+\label{fig:Figure5}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{fig6.png}
+\caption{DenseNet121 IoU and Loss values}
+\label{fig:Figure6}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{fig7.jpg}
+\caption{Result map of the model (a) original view, (b,c,d )zoomed views.}
+\label{fig:Figure7}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{fig8.jpg}
+\caption{Volume calculation methods. (a) first height is greater than the last height of the rows,(b) b) first height is less than the last height of the rows}
+\label{fig:Figure8}
+\end{figure}
